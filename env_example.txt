@@ -1,0 +1,5 @@
+# Google Gemini API Key
+# Get your API key from: https://makersuite.google.com/app/apikey
+# GEMINI_API_KEY= Your_API_key
+# search_api_key = "Your_API_key"
+# search_engine_id = "Your_Search_Engine_ID"
