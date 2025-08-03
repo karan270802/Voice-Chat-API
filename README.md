@@ -101,7 +101,7 @@ You can customize the application by modifying:
 ## File Structure
 
 ```
-voice-chat-app/
+Karan/
 ├── voice_chat_app.py      # Main application file
 ├── requirements.txt       # Python dependencies
 ├── env_example.txt        # Environment variables template
