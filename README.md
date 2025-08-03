@@ -48,62 +48,12 @@ Follow the steps below to run the project on your local machine.
    ```bash
    git clone https://github.com/karan270802/Voice-Chat-API.git
    cd Voice-Chat-API
-Install dependencies:
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-🔑 Configuration
-The application needs API keys for:
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
 
-Google Gemini API
-
-Google Custom Search API
-
-🔐 Note: For simplicity, API keys are hardcoded (but using environment variables is recommended for production).
-
-Open voice_chat_api.py in a text editor.
-
-In the __init__ method, replace:
-
-python
-Copy
-Edit
-gemini_api_key = "YOUR_GEMINI_API_KEY_HERE"
-In the perform_realtime_search method, replace:
-
-python
-Copy
-Edit
-search_api_key = "YOUR_GOOGLE_CUSTOM_SEARCH_API_KEY"
-search_engine_id = "YOUR_SEARCH_ENGINE_ID"
-▶️ Running the Application
-bash
-Copy
-Edit
-python voice_chat_api.py
-💡 Usage
-Chat Normally: Type a message and click "Send" or press Enter to talk with the AI.
-
-Ask for Live Info: Use keywords like "weather", "latest news", "headlines", etc., and the app will fetch real-time information using the search API.
-
-🗂️ Project Structure
-bash
-Copy
-Edit
-Voice-Chat-API/
-├── voice_chat_api.py       # Main application logic
-├── requirements.txt        # Python dependencies
-└── .gitignore              # Files to be ignored by Git
-🛠️ Technologies Used
-Python – Core language
-
-tkinter – GUI framework
-
-google-generativeai – Gemini API integration
-
-requests – For HTTP API calls
-
-Google Custom Search API – For real-time search capabilities
+1. **Run**:
+   ```bash
+   python voice_chat_api.py
 
