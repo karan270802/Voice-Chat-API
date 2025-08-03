@@ -1,5 +1,7 @@
 # Voice-Chat-API
 
+# Voice-Chat-API
+
 ## 🧠 Real-Time AI Assistant
 
 This is a real-time AI assistant built using **Python**, **tkinter**, and the **Google Gemini API**. The application supports natural language conversations and provides real-time search functionality for up-to-date responses.
@@ -18,9 +20,8 @@ This is a real-time AI assistant built using **Python**, **tkinter**, and the **
 
 ## 🎥 Demonstration
 
-📺 **Video Walkthrough**: Watch a demo of the AI Assistant.
-
-👉 Replace `YOUR_VIDEO_ID` below with the actual YouTube video ID:
+📺 **Video Walkthrough**: Watch a demo of the AI Assistant.  
+Replace `YOUR_VIDEO_ID` below with the actual ID:
 
 https://www.youtube.com/watch?v=YOUR_VIDEO_ID
 
@@ -47,14 +48,62 @@ Follow the steps below to run the project on your local machine.
    ```bash
    git clone https://github.com/karan270802/Voice-Chat-API.git
    cd Voice-Chat-API
+Install dependencies:
 
-2. **Install dependencies**:
-  ```bash
-  pip install -r requirements.txt
+bash
+Copy
+Edit
+pip install -r requirements.txt
+🔑 Configuration
+The application needs API keys for:
 
-3. **Running the Application**:
+Google Gemini API
 
-  ```bash
-  python voice_chat_api.py
+Google Custom Search API
 
+🔐 Note: For simplicity, API keys are hardcoded (but using environment variables is recommended for production).
+
+Open voice_chat_api.py in a text editor.
+
+In the __init__ method, replace:
+
+python
+Copy
+Edit
+gemini_api_key = "YOUR_GEMINI_API_KEY_HERE"
+In the perform_realtime_search method, replace:
+
+python
+Copy
+Edit
+search_api_key = "YOUR_GOOGLE_CUSTOM_SEARCH_API_KEY"
+search_engine_id = "YOUR_SEARCH_ENGINE_ID"
+▶️ Running the Application
+bash
+Copy
+Edit
+python voice_chat_api.py
+💡 Usage
+Chat Normally: Type a message and click "Send" or press Enter to talk with the AI.
+
+Ask for Live Info: Use keywords like "weather", "latest news", "headlines", etc., and the app will fetch real-time information using the search API.
+
+🗂️ Project Structure
+bash
+Copy
+Edit
+Voice-Chat-API/
+├── voice_chat_api.py       # Main application logic
+├── requirements.txt        # Python dependencies
+└── .gitignore              # Files to be ignored by Git
+🛠️ Technologies Used
+Python – Core language
+
+tkinter – GUI framework
+
+google-generativeai – Gemini API integration
+
+requests – For HTTP API calls
+
+Google Custom Search API – For real-time search capabilities
 
